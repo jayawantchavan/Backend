@@ -9,8 +9,8 @@
 		<version>2.7.0</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<groupId>com.learning</groupId>
+	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
@@ -51,11 +51,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.experimental</groupId>
-			<artifactId>spring-native</artifactId>
-			<version>${spring-native.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -134,19 +129,6 @@
 						</env>
 					</image>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.springframework.experimental</groupId>
-				<artifactId>spring-aot-maven-plugin</artifactId>
-				<version>${spring-native.version}</version>
-				<executions>
-					<execution>
-						<id>generate</id>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.hibernate.orm.tooling</groupId>
